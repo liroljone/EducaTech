@@ -1,24 +1,28 @@
 .imagem {
-    height: 500px; 
-    width: 100%;
+    height: 45rem; 
+    width: 1fr;
     margin: 0;
     padding: 0;
     overflow: hidden; 
-    position: relative; 
-     
-}
-
-.imagem figure {
-    margin: 0;
-    padding: 0;
-    width: 100%; 
+    position: relative;
 }
 
 .imagem img {
     width: 100%;
     height: 100%; 
-    object-position: center; 
     
+  
+}
+
+.imagem::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1; 
 }
 
 .texto-img {
@@ -34,16 +38,7 @@
     
 }
 
-.imagem::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); 
-    z-index: 1; 
-}
+
 
 .texto-img h1{
     font-size: 3.5em; 
@@ -82,12 +77,20 @@
     margin-bottom: 5px;
 }
 
+
+
 .container p {
     font-size: 25px;
     line-height: 1.5;
     margin-bottom: 30px;
     
 } 
+
+.texto-img p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
 
 .card{
     /*estrutura*/
@@ -103,6 +106,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
+
 }
 
 .card-img{
@@ -111,13 +115,19 @@
     margin-bottom: 15px; 
     height: auto;
     margin-bottom: 15px;
+    object-fit: cover;
  
 }
 
 .card-body{
     width: 100%;
     padding: 0;
-    border-radius: 50%;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+   
 }
 
 
@@ -126,12 +136,15 @@
     font-weight: bold;
     color: #500363; 
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .card-text { 
     font-size: 16px;
     line-height: 1.4;
     margin-bottom: 15px;
+    margin-top: 0;
+    text-align: center;
 }
 
 .card-body a.btn {
@@ -140,9 +153,11 @@
     text-decoration: none;
     font-weight: bold;
     border: 1px solid #500363;
-    padding: 5px 10px;
+    padding: 8px 10px;
     border-radius: 10px;
+    
     transition: background-color 0.3s;
+    
 }
 
 .card-body a.btn:hover {
