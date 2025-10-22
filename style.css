@@ -172,8 +172,50 @@
 }
 
 .card-body a.btn:hover {
-    background-color: #500363;
+    background-color: darkblue;
     color: white;
+}
+
+
+
+.main-footer {
+    
+    background-color: black; 
+    color: #fff; 
+    padding: 25px 10px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+
+.copyright {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    color: #f8f9fa; 
+}
+
+
+.footer-nav a {
+    color: #dee2e6; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    background-color: aquamarine;
 }
 
 
