@@ -1,5 +1,12 @@
+body {
+    overflow-x: hidden; /* Evita scroll lateral indesejado */
+}
+
+
+/* Site cursos e faculdades */
+
 .imagem {
-    height: 45rem; 
+    height: 35rem; 
     width: 100%; 
     margin: 0;
     padding: 0;
@@ -39,27 +46,28 @@
     top: 55%;
     left: 38%;
     transform: translateY(-50%); 
-    max-width: 45%; 
+    max-width: 80%; 
     color: white;
-    text-align: center;
+    text-align: left;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9); 
     z-index: 2;
     padding-right: 20px; 
 }
 
 .texto-img h1 {
-    font-size: 4em; 
+    font-size: 2.9em; 
     font-weight: bold;
     margin-bottom: 20px; 
     color: #b25dff; 
-    line-height: 1.1; 
+    line-height: 1.1;
+    text-align: center; 
 }
 
 .texto-img p {
     font-size: 1.5em; 
     line-height: 1.6;
     margin-bottom: 30px; 
-    
+    text-align: center;
 
 }
 
@@ -71,6 +79,7 @@
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
     padding: 20px;
+    
    
 }
 
@@ -214,11 +223,8 @@
     transition: color 0.3s;
 }
 
-.footer-nav a:hover {
-    background-color: aquamarine;
-}
 
-/* Conteúdo principal */
+/* Site Noticias */
 main {
     max-width: 1100px;
     margin: 2rem auto;
@@ -288,6 +294,7 @@ article a:hover {
    
     
 }
+
 
 
 
